@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+/**************** gallery.html ***************/
+
+/* section three */
+.section-three{
+    margin: 40px 0;
+}
+.single-img{
+    position: relative;
+    margin: 10px;
+}
+.single-img-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px 30px;
+    background: rgba(255, 255, 255, 0.7);
+}
+.single-img-content h3{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/************** end of gallery.html ***********/
+
+
+
+
+
+
+
+
+/***************** Media Queries *****************/
+
+
+
+@media screen and (min-width: 800px){
+   
+
+    /* section three */
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    
+}
+
+
+@media screen and (min-width: 1200px){
+   
+
+    /* section three */
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+

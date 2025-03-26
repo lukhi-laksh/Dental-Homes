@@ -1,0 +1,42 @@
+#iid{
+    background-color: #FAFAFA;
+}
+
+#background {
+    height: 29px;
+    width: 28px;
+    background-image: url(../images/back.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    margin-left: 36px;
+    margin-top: 5px;
+}
+
+.contact-top h3 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #365ed9;
+    
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  margin-block-end: 10px;
+}
+.contact-top h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  margin-block-end: 10px;
+}
+

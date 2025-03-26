@@ -1,14 +1,13 @@
 <?php
 include_once('hms/include/config.php');
-if(isset($_POST['submit']))
-{
-$name=$_POST['fullname'];
-$email=$_POST['emailid'];
-$mobileno=$_POST['mobileno'];
-$dscrption=$_POST['description'];
-$query=mysqli_query($con,"insert into tblcontactus(fullname,email,contactno,message) value('$name','$email','$mobileno','$dscrption')");
-echo "<script>alert('Your information succesfully submitted');</script>";
-echo "<script>window.location.href ='contactus.php'</script>";
+if (isset($_POST['submit'])) {
+  $name = $_POST['fullname'];
+  $email = $_POST['emailid'];
+  $mobileno = $_POST['mobileno'];
+  $dscrption = $_POST['description'];
+  $query = mysqli_query($con, "insert into tblcontactus(fullname,email,contactno,message) value('$name','$email','$mobileno','$dscrption')");
+  echo "<script>alert('Your information succesfully submitted');</script>";
+  echo "<script>window.location.href ='contactus.php'</script>";
 
 } ?>
 
@@ -30,54 +29,54 @@ echo "<script>window.location.href ='contactus.php'</script>";
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
     rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .error {
-            color: red;
-            font-size: 0.875em;
-        }
-    </style>
-    <script type="text/javascript">
-function valid() {
-    let valid = true;
-    let name = document.contactform.fullname.value;
-    let email = document.contactform.emailid.value;
-    let mobile = document.contactform.mobileno.value;
-    let description = document.contactform.description.value;
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .error {
+      color: red;
+      font-size: 0.875em;
+    }
+  </style>
+  <script type="text/javascript">
+    function valid() {
+      let valid = true;
+      let name = document.contactform.fullname.value;
+      let email = document.contactform.emailid.value;
+      let mobile = document.contactform.mobileno.value;
+      let description = document.contactform.description.value;
 
-  
-    document.querySelectorAll('.error').forEach(function(el) {
+
+      document.querySelectorAll('.error').forEach(function (el) {
         el.innerHTML = '';
-    });
+      });
 
-    if (name.trim() === "") {
+      if (name.trim() === "") {
         document.getElementById('name_error').innerHTML = "Name is required!";
         valid = false;
-    }
+      }
 
-    if (!validateEmail(email)) {
+      if (!validateEmail(email)) {
         document.getElementById('email_error').innerHTML = "Please enter a valid email!";
         valid = false;
-    }
+      }
 
-    if (mobile.trim() === "" || isNaN(mobile)|| mobile.length != 10) {
+      if (mobile.trim() === "" || isNaN(mobile) || mobile.length != 10) {
         document.getElementById('mobile_error').innerHTML = "Please enter a valid 10-digit mobile number!";
         valid = false;
-    }
-   
-    if (description.trim() === "") {
+      }
+
+      if (description.trim() === "") {
         document.getElementById('description_error').innerHTML = "Message cannot be empty!";
         valid = false;
+      }
+
+      return valid;
     }
 
-    return valid;
-}
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-</script>
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+  </script>
 
 </head>
 
@@ -104,14 +103,14 @@ function validateEmail(email) {
 
         </ul>
 
-       
+
         <ul class="social-list">
-        <li>
-          <a class="social-link" href="login.php">Login</a>
+          <li>
+            <a class="social-link" href="login.php">Login</a>
           </li>
-        
-          
-          
+
+
+
           <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -145,7 +144,7 @@ function validateEmail(email) {
       <div class="container">
 
         <a href="home.php" class="logo">OverSight </a>
-        
+
 
         <nav class="navbar container" data-navbar>
           <ul class="navbar-list">
@@ -162,7 +161,7 @@ function validateEmail(email) {
               <a href="aboutus.php" class="navbar-link" data-nav-link>About Us</a>
             </li>
 
-            
+
 
             <li>
               <a href="contactus.php" class="navbar-link" data-nav-link>Contact Us</a>
@@ -183,109 +182,85 @@ function validateEmail(email) {
 
       </div>
     </div>
-   
+
 
   </header>
   <main>
-  <article>
+    <article>
+      <section class="contactus">
+        <div class="container1">
+          <div class="contact-top">
+            <br><br>
+            <h3>CONTACT US</h3>
 
-      <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png')"
-        aria-label="hero">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="section-subtitle">Contact us</p>
-
-            <h1 class="h1 hero-title">We Are Best Dental Service</h1>
-
-            <p class="hero-text">
-            Live freely, not with constrained movements. The solution lies in balance. 
-            Let the day pass with flexibility, allowing growth while maintaining a strong course, 
-            ensuring the journey is smooth and free from unnecessary burdens.
-            </p>
           </div>
 
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.jpeg  " width="587" height="839" alt="hero banner" class="w-100">
-          </figure>
+          <div class="contact-middle">
+            <div class="contact-item1">
+              <span class="contact-icon">
+                <i class="fas fa-map-signs"></i>
+              </span>
+              <span>Address</span>
+              <p>1247/Plot No. 39, 15th Phase,
+                LHB Colony, Kanpur</p>
+            </div>
 
+            <div class="contact-item1">
+              <span class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </span>
+              <span>Contact Number</span>
+              <p>7052-101-786</p>
+            </div>
+
+            <div class="contact-item1">
+              <span class="contact-icon">
+                <i class="fas fa-paper-plane"></i>
+              </span>
+              <span>Email Address</span>
+              <p>oversight@hospital.com</p>
+            </div>
+
+            <div class="contact-item1">
+              <span class="contact-icon">
+                <i class="fas fa-globe"></i>
+              </span>
+              <span>Website</span>
+              <p>www.oversight.com</p>
+            </div>
+          </div>
+
+          <div class="contact-bottom">
+
+            <form class="form" method="post" name="contactform" onsubmit="return valid();">
+              <div class="form-group">
+                <input type="text" placeholder="Enter Name" name="fullname">
+                <div id="name_error" class="error" style="color: red;"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Enter Email Address" name="emailid">
+                <div id="email_error" class="error" style="color: red;"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Enter Mobile Number" name="mobileno">
+                <div id="mobile_error" class="error" style="color: red;"></div>
+              </div>
+              <div class="form-group">
+                <textarea rows="9" placeholder="Enter Your Message" name="description"></textarea>
+                <div id="description_error" class="error" style="color: red;"></div>
+              </div>
+              <input type="submit" class="btn" name="submit" value="Send Message">
+            </form>
+            <div class="mapp">
+              <img src="./assets/images/doctor-3.png" alt="contected doctor">
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="contactus">
-        <div class="container1">
-            <div class="contact-top">
-                <h3>CONTACT US</h3>
-                <h2>Contact Me</h2>
-            </div>
+    </article>
+  </main>
 
-            <div class="contact-middle">
-                <div class="contact-item1">
-                    <span class="contact-icon">
-                        <i class="fas fa-map-signs"></i>
-                    </span>
-                    <span>Address</span>
-                    <p>1247/Plot No. 39, 15th Phase,
-                    LHB Colony, Kanpur</p>
-                </div>
-
-                <div class="contact-item1">
-                    <span class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </span>
-                    <span>Contact Number</span>
-                    <p>7052-101-786</p>
-                </div>
-
-                <div class="contact-item1">
-                    <span class="contact-icon">
-                        <i class="fas fa-paper-plane"></i>
-                    </span>
-                    <span>Email Address</span>
-                    <p>oversight@hospital.com</p>
-                </div>
-
-                <div class="contact-item1">
-                    <span class="contact-icon">
-                        <i class="fas fa-globe"></i>
-                    </span>
-                    <span>Website</span>
-                    <p>www.oversight.com</p>
-                </div>
-            </div>
-
-            <div class="contact-bottom">
-               
-                <form class="form" method="post" name="contactform" onsubmit="return valid();">
-        <div class="form-group">
-            <input type="text" placeholder="Enter Name" name="fullname">
-            <div id="name_error" class="error" style="color: red;"></div>
-        </div>
-        <div class="form-group">
-            <input type="email" placeholder="Enter Email Address" name="emailid">
-            <div id="email_error" class="error" style="color: red;"></div>
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Enter Mobile Number" name="mobileno">
-            <div id="mobile_error" class="error" style="color: red;"></div>
-        </div>
-        <div class="form-group">
-            <textarea rows="9" placeholder="Enter Your Message" name="description"></textarea>
-            <div id="description_error" class="error" style="color: red;"></div>
-        </div>
-        <input type="submit" class="btn" name="submit" value="Send Message">
-    </form>
-        <div class="mapp">
-                <img src="./assets/images/doctor-3.png" alt="contected doctor"> 
-                </div>
-            </div>
-        </div>
-    </section>
-
-      </article>
-      </main>
-   
   <footer class="footer">
 
     <div class="footer-top section">
@@ -296,9 +271,9 @@ function validateEmail(email) {
           <a href="home.php" class="logo">OverSight </a>
 
           <p class="footer-text">
-          Always without exception, with the neckline neither in nor out, like a lion. 
-          Let the arrows of the heart strike the limits of time. 
-          Let the dignity of the language be maintained, not the struggle for space. Let life be filled with purpose.
+            Always without exception, with the neckline neither in nor out, like a lion.
+            Let the arrows of the heart strike the limits of time.
+            Let the dignity of the language be maintained, not the struggle for space. Let life be filled with purpose.
           </p>
 
           <div class="schedule">
@@ -344,7 +319,7 @@ function validateEmail(email) {
             </a>
           </li>
 
-          
+
 
           <li>
             <a href="contactus.php" class="footer-link">
@@ -362,7 +337,7 @@ function validateEmail(email) {
             </a>
           </li>
 
-          
+
 
 
         </ul>
@@ -498,14 +473,15 @@ function validateEmail(email) {
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
   </a>
-<script src="./assets/js/script.js" defer></script>
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/plugins/scroll-nav/js/jquery.easing.min.js"></script>
-<script src="assets/plugins/scroll-nav/js/scrolling-nav.js"></script>
-<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js" defer></script>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/scroll-nav/js/jquery.easing.min.js"></script>
+  <script src="assets/plugins/scroll-nav/js/scrolling-nav.js"></script>
+  <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

@@ -158,36 +158,11 @@ mysqli_close($conn);
   <main>
     <article>
 
-      <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png')"
-        aria-label="hero">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="section-subtitle">Gallery</p>
-
-            <h1 class="h1 hero-title">We Are Best Dental Service</h1>
-
-            <p class="hero-text">
-            Live freely, not with constrained movements. The solution lies in balance. 
-            Let the day pass with flexibility, allowing growth while maintaining a strong course, 
-            ensuring the journey is smooth and free from unnecessary burdens.
-            </p>
-
-            
-
-          </div>
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.jpeg" width="587" height="839" alt="hero banner" class="w-100">
-          </figure>
-
-        </div>
-      </section>
       
 
 <section class="section-gallery" id="gallery" aria-label="gallery">
     <div class="container1">
+      <br><br>
         <h3>Our Gallery</h3>
         <h2>View Our Gallery</h2>
         <section class="section-three">

@@ -137,7 +137,7 @@
 
             <li>
               <div class="service-card">
-
+                <!-- here all services start -->
                 <div class="card-icon">
                   <img src="./assets/images/service-icon-1.png" width="100" height="100" loading="lazy"
                     alt="service icon" class="w-100">

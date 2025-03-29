@@ -13,3 +13,5 @@ if(strlen($_SESSION['login'])==0)
 	}
 }
 ?>
+
+<!-- if they are not login then they show error -->

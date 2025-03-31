@@ -440,7 +440,7 @@ if (isset($_POST['submit'])) {
       <div class="container">
 
         <p class="copyright">
-          &copy; 2024 Hospital OverSight
+          &copy; 2025 Hospital OverSight
         </p>
 
         <ul class="social-list">

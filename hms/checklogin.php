@@ -1,5 +1,3 @@
-
-<!-- here we are check login is successufly or not -->
 <?php
 function check_login()
 {

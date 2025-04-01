@@ -1,3 +1,5 @@
+<!-- this code is help us to logout form the doctor page and redirect on login page -->
+
 <?php
 session_start();
 include('include/config.php');

@@ -3,7 +3,7 @@ include('include/config.php');
 if(!empty($_POST["specilizationid"])) 
 {
 
-  // this is a search bar of doctor 
+
  $sql=mysqli_query($con,"select doctorName,id from doctors where specilization='".$_POST['specilizationid']."'");?>
  <option selected="selected">Select Doctor </option>
  <?php

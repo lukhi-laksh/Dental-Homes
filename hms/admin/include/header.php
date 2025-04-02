@@ -32,7 +32,7 @@
 
 
 
-			Nirav Mehta
+			Admin
 									<i class="ti-angle-down"></i></i></span>
 								</a>
 								<ul class="dropdown-menu dropdown-dark">

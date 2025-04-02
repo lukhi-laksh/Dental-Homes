@@ -64,7 +64,7 @@ header("location:index.php");
 								Sign in to your account
 							</legend>
 							<p>
-								Please enter your name and password to log in.<br />
+								Please enter your email and password to log in.<br />
 								<span style="color:red;"><?php echo $_SESSION['errmsg']; ?><?php echo $_SESSION['errmsg']="";?></span>
 							</p>
 							<div class="form-group">

@@ -12,5 +12,14 @@ if($_POST['action'] == 'confirm') {
     }
 }
 
-
+if($_POST['action'] == 'cancel') {
+    $appointmentId = $_POST['id'];
+    $query = mysqli_query($con, "UPDATE appointment SET doctorStatus='0' WHERE id='$appointmentId'");
+    
+    if($query) {
+        echo 'success';
+    } else {
+        echo 'error';
+    }
+}
 ?>

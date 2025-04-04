@@ -17,7 +17,7 @@
     rel="stylesheet">
 </head>
 
-<!-- this is home page -->
+
 
 <body id="top">
 

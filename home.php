@@ -138,6 +138,9 @@
             Let the day pass with flexibility, allowing growth while maintaining a strong course, 
             ensuring the journey is smooth and free from unnecessary burdens.
             </p>   
+            <p class="hero-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia nulla velit, error, nemo expedita eum minima libero molestiae dolorum ipsa adipisci ullam repellendus?
+            </p>
            
 
           </div>

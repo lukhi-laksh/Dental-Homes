@@ -97,11 +97,6 @@ mysqli_close($conn);
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
 
           <li>
             <a href="#" class="social-link">

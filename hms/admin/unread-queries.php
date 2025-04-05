@@ -6,7 +6,6 @@ if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
 } else {
 ?>
-<!-- all the unread query are show here -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
